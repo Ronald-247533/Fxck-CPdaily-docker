@@ -33,3 +33,7 @@ docker run -itd -v /dev:/dev fxcktoday
 lean对于安全问题采用了一刀切的办法 因此container 是不能出网的
 
 这里参考了[这篇文章](https://zhuanlan.zhihu.com/p/446948929)
+
+## dockerhub
+![image](https://user-images.githubusercontent.com/57500568/188304885-ef34ce66-1763-4aac-8747-bea411a85b80.png)
+
