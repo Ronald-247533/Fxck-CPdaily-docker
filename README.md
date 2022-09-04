@@ -10,6 +10,11 @@
 为了保护隐私 将整体程序分成了两个docker images
 
 注意：个人针对CarltonHere的代码进行魔改 并制作的docker image
+first作为second的底包 不需要运行 编译即可
+
+```
+docker build -t first ./First/
+```
 
 ### Second
 
@@ -18,7 +23,7 @@
 在360v6上启动指令为
 
 ```
-docker builde -t fxcktoday ./Second/
+docker build -t fxcktoday ./Second/
 
 docker run -itd -v /dev:/dev fxcktoday
 ```
