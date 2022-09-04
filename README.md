@@ -7,7 +7,7 @@
 ### First
 
 程序docker使用了alpine作为builder 减少docker镜像大小 便于在物联网设备上使用 编译架构为armv8 64bit
-为了保护隐私 使用了第二部分
+为了保护隐私 将整体程序分成了两个docker images
 
 注意：个人针对CarltonHere的代码进行魔改 并制作的docker image
 
