@@ -16,8 +16,12 @@
 使用first作为builder 进行配置config.yml与定时任务
 
 在360v6上启动指令为
+
+```
 docker builde -t fxcktoday ./Second/
+
 docker run -itd -v /dev:/dev fxcktoday
+```
 
 注意：本人使用lean所编译的360v6固件 此固件内置docker 感谢lean等人对openwrt与qsdk的支持
 
