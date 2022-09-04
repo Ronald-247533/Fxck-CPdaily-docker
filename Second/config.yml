@@ -1,0 +1,71 @@
+Version: .hlju_1.0
+# 调试模式，用于寻找错误出现的坐标，默认为false
+# 特别提示：调试完成后请记得将debug改为false
+
+debug: false
+
+notifyOption:
+    method: 1
+    qywxOption:
+        corpid: ''
+        corpsecret: ''
+        agentid: ''
+
+
+users:
+    - user:
+        # 任务类型（收集：0、签到：1）
+        type: 0
+        # username 学号或者工号
+        username: '' #这里填写你的学号
+        # password 密码
+        password: '' #这里填写你的密码，就是教务系统那个密码
+        # address 地址，定位信息
+        address: ''
+        notifyOption:
+            method: 1
+            # rcvAcc为接受消息的账号，仅为企业微信ID(@all为全体)
+            rcvAcc: ''
+        # lon 经度
+        lon: 
+        # lat 纬度
+        lat: 
+        abnormalReason: ''
+        # 是否检查表单的标题（1代表检查，0代表不检查）
+        checkTitle: 1
+        forms:
+         - form:
+             title: 在校状态
+             value: 不在校
+         - form:
+             title: 能否按时返校
+             value: 能够按照学校规定日期返校   
+         - form:
+             title: 预计返校日期
+             value: 8月27日 
+         - form:
+             ignore: 1
+         - form:
+             ignore: 1                    
+         - form:
+             ignore: 1
+         - form:
+             title: 不在校学生体温状况
+             value: 正常          
+         - form:
+             title: 不在校学生隔离状况
+             value: 未隔离 
+         - form:
+             title: 7天内是否有中高风险地区旅居史
+             value: 否
+         - form:
+             title: 7天内是否有中高风险地区所在区（县）旅居史
+             value: 否  
+         - form:
+             title: 7天内是否有涉疫城市旅居史
+             value: 否     
+         - form:
+             ignore: 1
+         - form:
+             title: 不在校学生安全承诺
+             value: 本人承诺遵守学校及属地防疫规定，并做到未经审批不私自返校，如有特殊情况主动向辅导员老师报备

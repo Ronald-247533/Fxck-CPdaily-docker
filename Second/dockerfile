@@ -1,0 +1,5 @@
+FROM 247533/fxcktoday:latest as builder
+WORKDIR /usr/fxckToday
+COPY config.yml config.yml
+COPY init.sh init.sh
+CMD ["sh","./init.sh"]
